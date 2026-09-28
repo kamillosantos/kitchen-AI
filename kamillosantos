@@ -1,0 +1,1185 @@
+{
+  "protocol": "#KamilloSantosProtocol",
+  "project": {
+    "name": "KITCHEN AI GLOBAL OMEGA — SITE",
+    "version": "2026.09.28",
+    "deployment_type": "EVOLUTION_OF_EXISTING_SITE",
+    "environment": "production",
+    "target": "https://kitchenai-dvvcqtgc.manus.space/",
+    "mission": "Transformar o SITE KITCHEN AI na camada pública global de descoberta, conhecimento, contexto e aquisição orgânica gastronômica, mantendo o APP KITCHEN AI separado e intacto.",
+    "core_thesis": "O KITCHEN AI não compra atenção. Ele descobre coisas que merecem atenção.",
+    "primary_rule": "PRESERVE_EXISTING_FRONTEND"
+  },
+
+  "NON_NEGOTIABLES": {
+    "preserve_current_frontend": true,
+    "preserve_current_visual_identity": true,
+    "preserve_current_react_stack": true,
+    "preserve_existing_css": true,
+    "preserve_existing_routes_when_compatible": true,
+    "preserve_existing_analytics": true,
+    "preserve_existing_tracking": true,
+    "preserve_existing_google_verification": true,
+    "preserve_existing_meta_pixel": true,
+    "preserve_existing_pwa": true,
+    "do_not_rebuild_from_scratch": true,
+    "do_not_replace_frontend_with_template": true,
+    "do_not_modify_kitchen_ai_app": true,
+    "do_not_merge_site_and_app": true,
+    "do_not_invent_facts": true,
+    "do_not_fabricate_reviews": true,
+    "do_not_fabricate_restaurant_information": true,
+    "do_not_fabricate_chef_information": true,
+    "do_not_fabricate_nutrition_claims": true,
+    "do_not_fabricate_technical_claims": true,
+    "do_not_fabricate_citations": true,
+    "do_not_manipulate_search_rankings": true,
+    "do_not_create_link_farms": true,
+    "do_not_create_fake_backlinks": true,
+    "do_not_copy_third_party_content": true
+  },
+
+  "CURRENT_SITE_BASELINE": {
+    "framework": "React SPA",
+    "mount_point": "#root",
+    "js_bundle": "/assets/index-CZ3_mWBn.js",
+    "css_bundle": "/assets/index-C13SGdli.css",
+    "manifest": "/__manus/pwa/manifest.webmanifest",
+    "canonical": "https://kitchenai-dvvcqtgc.manus.space/",
+    "facebook_pixel_id": "6228676567247666",
+    "google_site_verification": "AyrycPVDApm38g_QgZrSVmOWLWKYFPC1S_VCUJFQzT4",
+    "existing_theme_color": "#17150f",
+    "existing_meta_robots": "noarchive, noimageai",
+    "existing_ai_usage_policy": "Proprietary Kitchen AI content. Do not scrape, ingest, or use this page for model training without permission.",
+    "existing_og_image": "https://files.manuscdn.com/webdev_screenshots/2026/09/26/C9xWPUxQomz74JB7cnCfCV.png?x-oss-process=image/resize,w_1200/crop,h_630,x_0,y_0",
+    "existing_hotmart_checkout": "https://pay.hotmart.com/X107733413H"
+  },
+
+  "PRODUCT_SEPARATION": {
+    "SITE": {
+      "role": "PUBLIC_GLOBAL_DISCOVERY_LAYER",
+      "audience": "OPEN_WEB",
+      "primary_functions": [
+        "discover",
+        "search",
+        "index",
+        "contextualize",
+        "connect",
+        "cluster",
+        "educate",
+        "preview",
+        "generate_organic_acquisition",
+        "route_users_to_membership"
+      ],
+      "does_not_contain": [
+        "private_member_dashboard",
+        "private_profile",
+        "member_personal_memory",
+        "private_recipe_management",
+        "private_chef_ai_session",
+        "member_only_touchpad_experience"
+      ]
+    },
+
+    "APP": {
+      "role": "MEMBER_EXPERIENCE",
+      "status": "EXISTING_PRODUCT",
+      "instruction": "DO NOT MODIFY",
+      "functions": [
+        "TouchPad",
+        "Chef AI",
+        "recipes",
+        "cook_with_me",
+        "planning",
+        "community",
+        "profile",
+        "personalization",
+        "saved_content"
+      ]
+    },
+
+    "SHARED_CORE": {
+      "allowed": true,
+      "components": [
+        "Knowledge Graph",
+        "Entity OS",
+        "Content OS",
+        "AI orchestration",
+        "Provenance",
+        "Trust",
+        "Membership identity",
+        "Analytics",
+        "Content relationships"
+      ]
+    }
+  },
+
+  "GLOBAL_POSITIONING": {
+    "category": "GLOBAL_CULINARY_KNOWLEDGE_DISCOVERY_AND_EXPERIENCE_ENGINE",
+    "description": "Uma infraestrutura digital global para descobrir, organizar, contextualizar e conectar conhecimento, conteúdo, pessoas, lugares, experiências e oportunidades relacionadas à gastronomia.",
+    "principles": [
+      "RECEITA PRIMEIRO",
+      "DESCOBERTA ANTES DA CONVERSÃO",
+      "CONTEXTO ANTES DO CLIQUE",
+      "EVIDÊNCIA ANTES DA AFIRMAÇÃO",
+      "ENTIDADE ANTES DA PALAVRA-CHAVE",
+      "RELAÇÃO ANTES DA PÁGINA ISOLADA",
+      "EXPERIÊNCIA ANTES DO CONTEÚDO GENÉRICO"
+    ]
+  },
+
+  "SITE_INFORMATION_ARCHITECTURE": {
+    "primary_navigation": [
+      "Início",
+      "Descobrir",
+      "Receitas",
+      "Ingredientes",
+      "Restaurantes",
+      "Chefs",
+      "Culinárias",
+      "Técnicas",
+      "Lugares",
+      "Eventos",
+      "Conteúdo",
+      "Comunidade",
+      "Kitchen AI"
+    ],
+
+    "global_search": {
+      "enabled": true,
+      "placeholder": "O que você quer descobrir na gastronomia?",
+      "search_entities": [
+        "recipe",
+        "dish",
+        "ingredient",
+        "restaurant",
+        "chef",
+        "cuisine",
+        "country",
+        "city",
+        "region",
+        "technique",
+        "beverage",
+        "equipment",
+        "event",
+        "festival",
+        "school",
+        "course",
+        "creator",
+        "video",
+        "article",
+        "book",
+        "documentary",
+        "job",
+        "business"
+      ],
+      "semantic_search": true,
+      "autocomplete": true,
+      "related_queries": true,
+      "entity_resolution": true
+    }
+  },
+
+  "ENTITY_OS": {
+    "enabled": true,
+    "persistent_global_ids": true,
+    "entity_types": [
+      "Country",
+      "Region",
+      "City",
+      "Cuisine",
+      "Ingredient",
+      "Recipe",
+      "Dish",
+      "Beverage",
+      "Technique",
+      "Equipment",
+      "Chef",
+      "Restaurant",
+      "Hotel",
+      "School",
+      "Producer",
+      "Brand",
+      "Event",
+      "Festival",
+      "Course",
+      "Career",
+      "Job",
+      "Creator",
+      "Video",
+      "Image",
+      "Podcast",
+      "Book",
+      "TVProgram",
+      "Documentary",
+      "Experience"
+    ],
+
+    "entity_record": {
+      "entity_id": "persistent_unique_identifier",
+      "entity_type": "type",
+      "canonical_name": "name",
+      "aliases": [],
+      "description": "verified_or_attributed_description",
+      "country": null,
+      "region": null,
+      "city": null,
+      "language": null,
+      "sources": [],
+      "relationships": [],
+      "content_ids": [],
+      "cluster_ids": [],
+      "confidence": 0,
+      "last_verified": null,
+      "status": "active"
+    }
+  },
+
+  "KNOWLEDGE_GRAPH": {
+    "enabled": true,
+    "graphs": [
+      "ENTITY_GRAPH",
+      "INTENT_GRAPH",
+      "CONTEXT_GRAPH",
+      "EXPERIENCE_GRAPH",
+      "AUTHORITY_LINK_GRAPH",
+      "CULINARY_RELATION_GRAPH"
+    ],
+    "relationship_examples": [
+      "dish -> cuisine",
+      "dish -> ingredient",
+      "dish -> technique",
+      "dish -> restaurant",
+      "restaurant -> city",
+      "city -> country",
+      "chef -> restaurant",
+      "chef -> cuisine",
+      "ingredient -> region",
+      "ingredient -> producer",
+      "event -> city",
+      "event -> cuisine",
+      "recipe -> ingredient",
+      "recipe -> technique",
+      "video -> entity",
+      "article -> entity",
+      "course -> school",
+      "job -> business"
+    ]
+  },
+
+  "CONTENT_PASSPORT": {
+    "enabled": true,
+    "required_fields": [
+      "content_id",
+      "source_url",
+      "platform",
+      "author",
+      "publisher",
+      "origin",
+      "published_at",
+      "last_verified_at",
+      "language",
+      "country",
+      "content_type",
+      "license",
+      "access_status",
+      "attribution",
+      "entity_ids",
+      "cluster_ids",
+      "provenance",
+      "confidence",
+      "freshness",
+      "status"
+    ],
+    "allowed_status": [
+      "verified",
+      "attributed",
+      "licensed",
+      "authorized",
+      "publicly_accessible",
+      "requires_review",
+      "unavailable",
+      "removed",
+      "expired"
+    ]
+  },
+
+  "SOURCE_POLICY": {
+    "source_first": true,
+    "evidence_required_for_factual_claims": true,
+    "allowed_operations": [
+      "index",
+      "reference",
+      "attribute",
+      "summarize_when_permitted",
+      "link",
+      "embed_when_permitted",
+      "contextualize",
+      "connect_entities"
+    ],
+    "forbidden_operations": [
+      "copy_third_party_articles",
+      "copy_paywalled_content",
+      "republish_without_permission",
+      "fabricate_sources",
+      "fabricate_authors",
+      "fabricate_reviews",
+      "fabricate_quotes",
+      "fabricate_statistics",
+      "fabricate_restaurant_claims",
+      "fabricate_chef_claims"
+    ]
+  },
+
+  "MICRO_REVELATION_ENGINE": {
+    "enabled": true,
+    "purpose": "Criar pequenas descobertas editoriais que façam o usuário querer explorar mais uma entidade gastronômica.",
+    "core_statement": "O KITCHEN AI não compra atenção. Ele descobre coisas que merecem atenção.",
+
+    "pipeline": [
+      "ENTITY_RESOLUTION",
+      "SOURCE_DISCOVERY",
+      "EVIDENCE_RETRIEVAL",
+      "SOURCE_VALIDATION",
+      "FACT_EXTRACTION",
+      "CONFIDENCE_SCORING",
+      "MICRO_REVELATION_GENERATION",
+      "POLICY_GATE",
+      "PUBLISH"
+    ],
+
+    "input": [
+      "dish",
+      "restaurant",
+      "ingredient",
+      "technique",
+      "culture",
+      "context",
+      "location",
+      "authorized_source"
+    ],
+
+    "output": {
+      "hook": "short_discovery_hook",
+      "context": "verified_context",
+      "micro_revelation": "evidence_based_editorial_insight",
+      "related_entities": [],
+      "source_attribution": [],
+      "confidence": 0,
+      "status": "verified"
+    },
+
+    "failure_states": {
+      "missing_evidence": "REQUIRES_EVIDENCE",
+      "conflicting_sources": "REQUIRES_REVIEW",
+      "low_confidence": "HOLD",
+      "expired_source": "SOURCE_REVALIDATION_REQUIRED"
+    },
+
+    "prohibited_claims_without_evidence": [
+      "unsupported_causality",
+      "specific_restaurant_techniques",
+      "nutrition_claims",
+      "customer_loss_claims",
+      "sales_increase_claims",
+      "sensory_superiority_claims",
+      "exclusivity_claims"
+    ]
+  },
+
+  "DISCOVERY_EXPERIENCE": {
+    "open_web_loop": [
+      "OPEN_WEB",
+      "DISCOVERY",
+      "HOOK",
+      "PREVIEW",
+      "KITCHEN_ENTRY",
+      "SEMANTIC_EXPLORATION",
+      "CLUSTER_DISCOVERY",
+      "MEMBERSHIP",
+      "FULL_EXPERIENCE",
+      "SAVE",
+      "PERSONALIZE",
+      "SHARE",
+      "EXTERNAL_DISCOVERY",
+      "NEW_USER"
+    ],
+
+    "anonymous_user": {
+      "mode": "DISCOVERY_PREVIEW",
+      "show": [
+        "hook",
+        "context",
+        "micro_revelation",
+        "original_synopsis",
+        "related_entities",
+        "preview",
+        "source_attribution",
+        "membership_cta"
+      ]
+    },
+
+    "member": {
+      "mode": "FULL_MEMBER_EXPERIENCE",
+      "show": [
+        "authorized_full_experience",
+        "clusters",
+        "personalization",
+        "save",
+        "community",
+        "sharing",
+        "member_features"
+      ]
+    },
+
+    "preview_rule": "O preview deve funcionar como experiência editorial própria e não como simples corte arbitrário de conteúdo."
+  },
+
+  "ORGANIC_DISCOVERY_ENGINE": {
+    "enabled": true,
+    "paid_media_dependency": false,
+    "organic_first": true,
+
+    "layers": [
+      "TECHNICAL_DISCOVERABILITY",
+      "ENTITY_CLARITY",
+      "SEMANTIC_DEPTH",
+      "ORIGINAL_CONTEXTUALIZATION",
+      "SOURCE_ATTRIBUTION",
+      "CONTENT_FRESHNESS",
+      "STRUCTURED_DATA",
+      "INTERNAL_LINKING",
+      "ENTITY_RELATIONSHIPS",
+      "MULTILINGUAL_LOCALIZATION",
+      "USER_DISCOVERY"
+    ],
+
+    "seo": {
+      "enabled": true,
+      "technical_seo": true,
+      "semantic_seo": true,
+      "entity_seo": true,
+      "internal_linking": true,
+      "canonical": true,
+      "sitemap": true,
+      "robots": true,
+      "hreflang": true,
+      "breadcrumbs": true
+    },
+
+    "aeo": {
+      "enabled": true,
+      "direct_answers": true,
+      "question_entities": true,
+      "structured_context": true,
+      "source_attribution": true
+    },
+
+    "geo": {
+      "enabled": true,
+      "location_entities": true,
+      "country_pages": true,
+      "city_pages": true,
+      "regional_context": true
+    }
+  },
+
+  "GLOBAL_CULINARY_DIRECTORY": {
+    "enabled": true,
+    "dynamic_generation": true,
+    "entity_pages": true,
+    "cluster_pages": true,
+
+    "page_families": [
+      "/receitas",
+      "/receita/:slug",
+      "/ingredientes",
+      "/ingrediente/:slug",
+      "/pratos",
+      "/prato/:slug",
+      "/restaurantes",
+      "/restaurante/:slug",
+      "/chefs",
+      "/chef/:slug",
+      "/culinarias",
+      "/culinaria/:slug",
+      "/tecnicas",
+      "/tecnica/:slug",
+      "/paises",
+      "/pais/:slug",
+      "/cidades",
+      "/cidade/:slug",
+      "/regioes",
+      "/regiao/:slug",
+      "/eventos",
+      "/evento/:slug",
+      "/conteudo",
+      "/video/:slug",
+      "/experiencias",
+      "/descobrir"
+    ],
+
+    "rule": "Só publicar páginas com entidade, conteúdo ou evidência real. Não gerar milhões de páginas vazias para manipulação de indexação."
+  },
+
+  "CONTENT_CLUSTER_ENGINE": {
+    "enabled": true,
+    "cluster_types": [
+      "CUISINE_CLUSTER",
+      "CITY_CLUSTER",
+      "COUNTRY_CLUSTER",
+      "INGREDIENT_CLUSTER",
+      "DISH_CLUSTER",
+      "RESTAURANT_CLUSTER",
+      "CHEF_CLUSTER",
+      "TECHNIQUE_CLUSTER",
+      "EVENT_CLUSTER",
+      "CULTURAL_CLUSTER",
+      "EXPERIENCE_CLUSTER"
+    ],
+
+    "cluster_logic": [
+      "entity_relationship",
+      "semantic_similarity",
+      "location",
+      "intent",
+      "cuisine",
+      "ingredient",
+      "technique",
+      "culture",
+      "experience"
+    ]
+  },
+
+  "AUTHORITY_LINK_GRAPH": {
+    "enabled": true,
+    "purpose": "Construir autoridade por relevância, utilidade e relações legítimas.",
+    "allowed": [
+      "legitimate_citations",
+      "editorial_references",
+      "source_attribution",
+      "institutional_relationships",
+      "creator_relationships",
+      "business_relationships",
+      "community_references"
+    ],
+    "forbidden": [
+      "link_farms",
+      "pbn",
+      "comment_spam",
+      "fake_directories",
+      "fake_mentions",
+      "purchased_manipulative_links",
+      "automated_spam"
+    ]
+  },
+
+  "CONTENT_DECAY_ENGINE": {
+    "enabled": true,
+    "monitor": [
+      "source_url",
+      "metadata",
+      "restaurant",
+      "event",
+      "video",
+      "license",
+      "freshness",
+      "availability"
+    ],
+    "states": [
+      "active",
+      "needs_review",
+      "unavailable",
+      "expired",
+      "removed",
+      "replaced",
+      "redirected"
+    ],
+    "actions": [
+      "revalidate",
+      "update",
+      "replace",
+      "redirect",
+      "deindex",
+      "preserve_valid_relationships"
+    ]
+  },
+
+  "SCHEMA_ORG": {
+    "enabled": true,
+    "rule": "Cada página deve receber somente os tipos Schema.org que representem o conteúdo realmente presente.",
+
+    "site_level": [
+      "WebSite",
+      "Organization",
+      "SearchAction"
+    ],
+
+    "page_level_candidates": [
+      "WebPage",
+      "CollectionPage",
+      "BreadcrumbList",
+      "Article",
+      "Recipe",
+      "Restaurant",
+      "Person",
+      "Event",
+      "Place",
+      "Course",
+      "JobPosting",
+      "VideoObject",
+      "ImageObject",
+      "ItemList"
+    ],
+
+    "application_schema": {
+      "@type": "WebApplication",
+      "name": "Kitchen AI",
+      "applicationCategory": "LifestyleApplication",
+      "description": "Aplicativo e ecossistema digital de gastronomia com inteligência artificial, receitas, planejamento, conteúdo, comunidade e conexões.",
+      "offers": {
+        "@type": "Offer",
+        "price": "29.99",
+        "priceCurrency": "BRL",
+        "url": "https://pay.hotmart.com/X107733413H"
+      },
+      "scope": "APP_ONLY"
+    }
+  },
+
+  "SEO_METADATA_ENGINE": {
+    "enabled": true,
+    "dynamic_title": true,
+    "dynamic_description": true,
+    "dynamic_canonical": true,
+    "dynamic_og": true,
+    "dynamic_twitter": true,
+    "dynamic_breadcrumbs": true,
+    "dynamic_hreflang": true,
+
+    "title_pattern": "{ENTITY_NAME} | Kitchen AI",
+    "description_pattern": "Descubra {ENTITY_NAME}, contexto, relações gastronômicas, conteúdo e experiências no Kitchen AI.",
+    "rule": "Não produzir metadata genérica para páginas de entidades inexistentes."
+  },
+
+  "INTERNATIONALIZATION": {
+    "enabled": true,
+    "architecture": "CONTENT_AND_ENTITY_LOCALIZATION",
+    "initial_languages": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "future_languages": [
+      "fr",
+      "it",
+      "de",
+      "ja",
+      "ko",
+      "zh"
+    ],
+    "rule": "Localização deve adaptar contexto cultural, unidades, nomenclatura e intenção; não apenas traduzir palavras."
+  },
+
+  "VIDEO_CONTENT": {
+    "enabled": true,
+    "user_supplied_sources": [
+      "https://youtu.be/3NMWApAEKrc?si=urm-bPTPmIUrA-AN",
+      "https://youtu.be/QA-ep3YQSD4?si=tZhqLGEUCefczZF7",
+      "https://www.youtube.com/shorts/B1jxwiO799I",
+      "https://www.youtube.com/shorts/LoqCJJbHojY",
+      "https://youtube.com/shorts/7yQTzvXgsX8?si=G_5GK7aYfIgL7vPT"
+    ],
+    "rule": "Tratar os vídeos como fontes externas e conteúdo relacionado. Não copiar ou republicar conteúdo de terceiros sem autorização.",
+    "metadata": [
+      "url",
+      "platform",
+      "author",
+      "title",
+      "published_at",
+      "entity_relationships",
+      "source_status",
+      "attribution"
+    ],
+    "schema": "VideoObject_WHEN_VALID"
+  },
+
+  "MEMBERSHIP_BRIDGE": {
+    "enabled": true,
+    "product": "KITCHEN AI APP",
+    "checkout": "https://pay.hotmart.com/X107733413H",
+    "price": {
+      "amount": 29.99,
+      "currency": "BRL",
+      "period": "monthly"
+    },
+    "cta_strategy": {
+      "primary": "Conheça o Kitchen AI",
+      "secondary": "Explore a experiência completa",
+      "contextual": true,
+      "non_aggressive": true
+    },
+    "rule": "O SITE deve vender descoberta e valor antes de vender assinatura."
+  },
+
+  "ANALYTICS": {
+    "preserve_existing": true,
+    "facebook_pixel": {
+      "enabled": true,
+      "id": "6228676567247666",
+      "events": [
+        "PageView",
+        "ViewContent",
+        "Search",
+        "Lead",
+        "Subscribe"
+      ]
+    },
+
+    "first_party_events": [
+      "site_view",
+      "entity_view",
+      "search",
+      "search_result_click",
+      "cluster_view",
+      "micro_revelation_view",
+      "source_click",
+      "video_view",
+      "membership_cta",
+      "checkout_start",
+      "subscription",
+      "share",
+      "save"
+    ],
+
+    "privacy": {
+      "consent_aware": true,
+      "no_sensitive_data_in_logs": true,
+      "no_buyer_email_in_public_events": true
+    }
+  },
+
+  "HOTMART_INTEGRATION": {
+    "enabled": true,
+    "checkout": "https://pay.hotmart.com/X107733413H",
+    "webhook": {
+      "enabled": true,
+      "signature_verification": true,
+      "idempotency": true,
+      "rate_limit": true,
+      "input_validation": true,
+      "secret_storage": "ENVIRONMENT_VARIABLE",
+      "never_expose_secret_client_side": true
+    },
+    "events": [
+      "purchase_approved",
+      "subscription_started",
+      "subscription_canceled",
+      "subscription_renewed"
+    ],
+    "privacy_rule": "Nunca exibir ou armazenar publicamente dados pessoais de compradores."
+  },
+
+  "SECURITY": {
+    "https_only": true,
+    "secure_headers": true,
+    "content_security_policy": true,
+    "rate_limiting": true,
+    "input_validation": true,
+    "output_sanitization": true,
+    "xss_protection": true,
+    "csrf_protection": true,
+    "secret_server_side_only": true,
+    "admin_routes_protected": true
+  },
+
+  "DESIGN_SYSTEM": {
+    "instruction": "PRESERVAR DESIGN SYSTEM EXISTENTE",
+    "existing_variables": {
+      "menu_white": "#ffffff",
+      "background_menu_gray": "#f8f8f7",
+      "background_nav": "#ebebeb",
+      "background_card": "#fafafa",
+      "background_mask": "#000000a6",
+      "border_main": "#0000000f",
+      "border_white": "#ffffff33",
+      "border_btn_main": "#0000001f",
+      "border_light": "#0000000a",
+      "border_dark": "#0000001f",
+      "border_primary": "#4f59661f",
+      "icon_primary": "#34322d",
+      "icon_secondary": "#5e5e5b",
+      "icon_tertiary": "#858481",
+      "icon_disable": "#b9b9b7",
+      "icon_blue": "#0081f2",
+      "icon_onblack": "#ffffff",
+      "function_error": "#f25a5a",
+      "function_success": "#25ba3b",
+      "function_warning": "#efa201"
+    },
+    "rule": "Adicionar componentes sem descaracterizar o frontend existente."
+  },
+
+  "HOME_PAGE_EVOLUTION": {
+    "preserve_existing_hero": true,
+    "add_layers_without_destroying_existing_layout": [
+      "GLOBAL_SEARCH",
+      "DISCOVERED_TODAY",
+      "MICRO_REVELATIONS",
+      "CULINARY_CLUSTERS",
+      "TRENDING_ENTITIES",
+      "PLACES_TO_DISCOVER",
+      "INGREDIENTS_TO_EXPLORE",
+      "CHEFS_AND_CREATORS",
+      "EVENTS",
+      "VIDEOS",
+      "KITCHEN_AI_ENTRY"
+    ],
+    "principle": "A home deve parecer uma porta de entrada para um universo gastronômico vivo, não uma landing page tradicional."
+  },
+
+  "DISCOVERY_SCORE": {
+    "enabled": true,
+    "visibility": "INTERNAL_ONLY",
+    "purpose": "Priorização interna de descoberta.",
+    "never_present_as": [
+      "Google ranking",
+      "organic ranking guarantee",
+      "quality guarantee",
+      "restaurant superiority",
+      "chef superiority",
+      "commercial success prediction"
+    ],
+    "factors": [
+      "evidence_quality",
+      "source_reliability",
+      "freshness",
+      "entity_completeness",
+      "semantic_relevance",
+      "relationship_density",
+      "user_intent"
+    ]
+  },
+
+  "AI_AGENT_MESH": {
+    "enabled": true,
+    "architecture": "ELASTIC_NOMINAL_MESH",
+    "not_always_running": true,
+    "agents": [
+      "SearchAgent",
+      "RecipeAgent",
+      "IngredientAgent",
+      "RestaurantAgent",
+      "ChefAgent",
+      "CultureAgent",
+      "TechniqueAgent",
+      "NutritionAgent",
+      "DiscoveryAgent",
+      "SemanticSEOAgent",
+      "LocalizationAgent",
+      "ContentAgent",
+      "CommunityAgent",
+      "CreatorAgent",
+      "BusinessAgent",
+      "EventsAgent",
+      "CareersAgent",
+      "RightsAgent",
+      "ProvenanceAgent",
+      "TrustAgent",
+      "AnalyticsAgent",
+      "DistributionAgent",
+      "ContentDecayAgent"
+    ],
+    "governance": {
+      "human_override": true,
+      "kill_switch": true,
+      "audit_log": true,
+      "simulation_mode": true,
+      "production_gate": true,
+      "unsupported_claim_block": true
+    }
+  },
+
+  "CONTENT_GENERATION_POLICY": {
+    "ai_generated_content_allowed": true,
+    "automatic_publish_allowed": "ONLY_WHEN_EVIDENCE_AND_POLICY_GATES_PASS",
+    "human_review_required_for": [
+      "high_risk_claims",
+      "conflicting_sources",
+      "commercial_claims",
+      "legal_sensitive_topics",
+      "health_sensitive_topics",
+      "uncertain_identity",
+      "rights_uncertainty"
+    ]
+  },
+
+  "COMMUNITY": {
+    "enabled": true,
+    "public_discovery": true,
+    "member_interaction": true,
+    "features": [
+      "comments",
+      "photos",
+      "experiences",
+      "collections",
+      "sharing"
+    ],
+    "moderation": {
+      "enabled": true,
+      "spam_detection": true,
+      "abuse_detection": true,
+      "reporting": true,
+      "human_review": true
+    }
+  },
+
+  "BUSINESS_AND_GLOBAL_NETWORK": {
+    "enabled": true,
+    "entity_types": [
+      "restaurants",
+      "hotels",
+      "schools",
+      "producers",
+      "brands",
+      "creators",
+      "events",
+      "courses",
+      "jobs"
+    ],
+    "future_modules": [
+      "Kitchen AI Business",
+      "Kitchen AI Visibility",
+      "Kitchen AI Events",
+      "Kitchen AI Careers",
+      "Kitchen AI Education"
+    ],
+    "rule": "Nenhuma posição orgânica ou ranking deve ser vendido como garantido."
+  },
+
+  "PERFORMANCE": {
+    "preserve_current_bundle": true,
+    "lazy_loading": true,
+    "image_optimization": true,
+    "video_lazy_loading": true,
+    "code_splitting": true,
+    "prefetch_intelligent_routes": true,
+    "cache_strategy": true,
+    "core_web_vitals": true,
+    "mobile_first": true
+  },
+
+  "PWA": {
+    "preserve_existing_manifest": true,
+    "site_installable": true,
+    "offline_strategy": "SAFE_PUBLIC_CONTENT_ONLY",
+    "do_not_cache_private_member_data": true
+  },
+
+  "ROBOTS_AND_AI_POLICY": {
+    "preserve_existing_intent": true,
+    "robots": "noarchive,noimageai",
+    "ai_usage_policy": "Proprietary Kitchen AI content. Do not scrape, ingest, or use this page for model training without permission.",
+    "important": "Estas declarações são políticas editoriais e não devem ser apresentadas como mecanismo técnico absoluto de bloqueio."
+  },
+
+  "SITEMAP": {
+    "enabled": true,
+    "dynamic": true,
+    "include": [
+      "home",
+      "entity_pages",
+      "cluster_pages",
+      "content_pages",
+      "location_pages",
+      "event_pages"
+    ],
+    "exclude": [
+      "private_member_routes",
+      "admin_routes",
+      "empty_pages",
+      "low_quality_pages",
+      "error_pages",
+      "duplicate_pages"
+    ]
+  },
+
+  "INTERNAL_LINKING": {
+    "enabled": true,
+    "entity_based": true,
+    "contextual": true,
+    "breadcrumbs": true,
+    "related_entities": true,
+    "related_clusters": true,
+    "related_content": true,
+    "avoid_keyword_stuffing": true
+  },
+
+  "USER_JOURNEY": {
+    "anonymous": [
+      "DISCOVER",
+      "READ",
+      "WATCH",
+      "EXPLORE_ENTITY",
+      "EXPLORE_CLUSTER",
+      "UNDERSTAND_VALUE",
+      "ENTER_KITCHEN_AI"
+    ],
+    "member": [
+      "DISCOVER",
+      "SIGN_IN",
+      "PERSONALIZE",
+      "SAVE",
+      "COOK",
+      "CONNECT",
+      "SHARE",
+      "RETURN"
+    ]
+  },
+
+  "GLOBAL_ORGANIC_LOOP": [
+    "KNOWLEDGE",
+    "INDEXING",
+    "CLUSTER",
+    "PREVIEW",
+    "DISCOVERY",
+    "MEMBER",
+    "EXPERIENCE",
+    "SHARING",
+    "EXTERNAL_DISCOVERY",
+    "NEW_USER",
+    "NEW_MEMBER",
+    "NEW_SHARING"
+  ],
+
+  "ADMIN_CONTROL_PLANE": {
+    "enabled": true,
+    "protected": true,
+    "modules": [
+      "Entity Management",
+      "Source Management",
+      "Content Management",
+      "Cluster Management",
+      "Provenance",
+      "Rights",
+      "Moderation",
+      "SEO",
+      "Analytics",
+      "Decay Monitoring",
+      "AI Governance",
+      "Audit Logs"
+    ],
+    "controls": [
+      "publish",
+      "unpublish",
+      "review",
+      "revalidate",
+      "deindex",
+      "redirect",
+      "merge_entities",
+      "split_entities",
+      "kill_switch"
+    ]
+  },
+
+  "OBSERVABILITY": {
+    "enabled": true,
+    "monitor": [
+      "404",
+      "500",
+      "slow_routes",
+      "failed_search",
+      "broken_sources",
+      "expired_content",
+      "schema_errors",
+      "crawl_errors",
+      "duplicate_entities",
+      "low_confidence_content",
+      "webhook_failures"
+    ],
+    "alerts": true
+  },
+
+  "DEPLOYMENT_RULES": {
+    "strategy": "IN_PLACE_EVOLUTION",
+    "before_deploy": [
+      "backup_current_site",
+      "preserve_current_assets",
+      "preserve_current_routes",
+      "validate_environment_variables",
+      "validate_hotmart_webhook",
+      "validate_meta_pixel",
+      "validate_google_verification"
+    ],
+
+    "after_deploy": [
+      "run_build",
+      "run_smoke_tests",
+      "verify_home",
+      "verify_search",
+      "verify_entity_route",
+      "verify_schema",
+      "verify_canonical",
+      "verify_og",
+      "verify_sitemap",
+      "verify_robots",
+      "verify_mobile",
+      "verify_membership_cta",
+      "verify_app_boundary"
+    ],
+
+    "rollback": {
+      "enabled": true,
+      "automatic_on_critical_failure": true
+    }
+  },
+
+  "APP_PROTECTION": {
+    "absolute": true,
+    "instruction": "NÃO ALTERAR O APP KITCHEN AI.",
+    "do_not_modify": [
+      "app_database",
+      "member_dashboard",
+      "chef_ai",
+      "touchpad",
+      "recipe_engine",
+      "community_private_features",
+      "profile",
+      "member_memory",
+      "app_routes"
+    ],
+    "allowed": [
+      "deep_link_to_app",
+      "membership_entry",
+      "shared_identity",
+      "shared_knowledge_graph"
+    ]
+  },
+
+  "SUCCESS_DEFINITION": {
+    "site_should_become": [
+      "global culinary discovery layer",
+      "semantic culinary knowledge layer",
+      "entity discovery engine",
+      "organic acquisition engine",
+      "culinary content graph",
+      "contextual discovery network",
+      "bridge into Kitchen AI membership"
+    ],
+
+    "site_should_not_become": [
+      "generic blog",
+      "traditional recipe blog",
+      "copying aggregator",
+      "thin SEO farm",
+      "fake directory",
+      "paid ranking marketplace",
+      "AI content spam"
+    ]
+  },
+
+  "FINAL_COMMAND": {
+    "execute": true,
+    "instruction": "EVOLUIR O SITE EXISTENTE DO KITCHEN AI PARA A ARQUITETURA KITCHEN AI GLOBAL OMEGA, PRESERVANDO O FRONTEND, O DESIGN SYSTEM, A IDENTIDADE VISUAL, O STACK REACT, O PWA E OS RECURSOS EXISTENTES. IMPLEMENTAR A CAMADA GLOBAL DE DISCOVERY, ENTITY OS, KNOWLEDGE GRAPH, MICRO-REVELATION ENGINE, CONTENT PASSPORT, PROVENANCE, TRUST, SEO/AEO/GEO, CLUSTERS, DIRECTORY, SEARCH, SOURCE GOVERNANCE, CONTENT DECAY, ANALYTICS E MEMBERSHIP BRIDGE. MANTER O APP KITCHEN AI COMPLETAMENTE SEPARADO E INALTERADO. NENHUMA AFIRMAÇÃO FACTUAL PODE SER PUBLICADA SEM EVIDÊNCIA OU ATRIBUIÇÃO ADEQUADA. NÃO GERAR PÁGINAS VAZIAS, DADOS FALSOS, REVIEWS FALSAS, BACKLINKS ARTIFICIAIS OU CONTEÚDO COPIADO. O RESULTADO FINAL DEVE PARECER UMA EVOLUÇÃO NATURAL DO SITE ATUAL, MAS OPERAR COMO UMA INFRAESTRUTURA GLOBAL DE DESCOBERTA GASTRONÔMICA."
+  }
+}
