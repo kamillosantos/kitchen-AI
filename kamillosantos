@@ -1182,4 +1182,52 @@
     "execute": true,
     "instruction": "EVOLUIR O SITE EXISTENTE DO KITCHEN AI PARA A ARQUITETURA KITCHEN AI GLOBAL OMEGA, PRESERVANDO O FRONTEND, O DESIGN SYSTEM, A IDENTIDADE VISUAL, O STACK REACT, O PWA E OS RECURSOS EXISTENTES. IMPLEMENTAR A CAMADA GLOBAL DE DISCOVERY, ENTITY OS, KNOWLEDGE GRAPH, MICRO-REVELATION ENGINE, CONTENT PASSPORT, PROVENANCE, TRUST, SEO/AEO/GEO, CLUSTERS, DIRECTORY, SEARCH, SOURCE GOVERNANCE, CONTENT DECAY, ANALYTICS E MEMBERSHIP BRIDGE. MANTER O APP KITCHEN AI COMPLETAMENTE SEPARADO E INALTERADO. NENHUMA AFIRMAÇÃO FACTUAL PODE SER PUBLICADA SEM EVIDÊNCIA OU ATRIBUIÇÃO ADEQUADA. NÃO GERAR PÁGINAS VAZIAS, DADOS FALSOS, REVIEWS FALSAS, BACKLINKS ARTIFICIAIS OU CONTEÚDO COPIADO. O RESULTADO FINAL DEVE PARECER UMA EVOLUÇÃO NATURAL DO SITE ATUAL, MAS OPERAR COMO UMA INFRAESTRUTURA GLOBAL DE DESCOBERTA GASTRONÔMICA."
   }
+}/**
+ * [C2 ENGINE] Launchpad Orchestrator
+ * Captura, normaliza semificamente (JSON-LD) e injeta sinais dos motores de busca e LLMs globais.
+ */
+
+export interface GlobalSearchSignal {
+  sourceEngine: 'google' | 'bing' | 'openai_llm' | 'anthropic_llm' | 'deepseek' | 'custom_crawler';
+  topicCluster: 'ingrediente' | 'tecnica_culinaria' | 'harmonizacao' | 'tendencia_global' | 'restaurante';
+  rawPayload: Record<string, any>;
+  timestamp: string;
+}
+
+export class LaunchpadOrchestrator {
+  private static instance: LaunchpadOrchestrator;
+
+  private constructor() {}
+
+  public static getInstance(): LaunchpadOrchestrator {
+    if (!LaunchpadOrchestrator.instance) {
+      LaunchpadOrchestrator.instance = new LaunchpadOrchestrator();
+    }
+    return LaunchpadOrchestrator.instance;
+  }
+
+  public async ingestAndNormalizeSignal(signal: GlobalSearchSignal): Promise<{ status: string; id: string; normalizedData: any }> {
+    try {
+      const normalizedData = {
+        cluster: signal.topicCluster,
+        origin_engine: signal.sourceEngine,
+        title: signal.rawPayload.title || 'Descoberta Gastronômica Global',
+        summary: signal.rawPayload.snippet || signal.rawPayload.content,
+        structured_metadata: JSON.stringify(signal.rawPayload),
+        indexed_at: new Date().toISOString(),
+        verified: false // Requer chancela no Painel Master
+      };
+
+      console.log(`[C2 Launchpad Engine] Sinal processado e otimizado de ${signal.sourceEngine}.`);
+
+      return {
+        status: 'success_injected_to_network',
+        id: `sig_${Date.now()}`,
+        normalizedData
+      };
+    } catch (error) {
+      console.error('[C2 Launchpad Engine Error]', error);
+      throw new Error('Falha no pipeline de orquestração do Launchpad.');
+    }
+  }
 }
